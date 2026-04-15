@@ -32,10 +32,7 @@ class Explorer(Problem):
 
         man_x, man_y, ob1_x, ob1_y, ob1_dir, ob2_x, ob2_y, ob2_dir = state
 
-        directions = {"Up": (0,1), "Down": (0,-1), "Left": (-1,0), "Right":(1,0)}
-
         ob1_x,ob1_y,ob1_dir = self.moveObstacle(ob1_x,ob1_y,ob1_dir)
-        ob2_new = self.moveObstacle(ob2_x, ob2_y,ob2_dir)
 
         obstacles = [(ob1_x,ob1_y),(ob2_x,ob2_y)]
 
