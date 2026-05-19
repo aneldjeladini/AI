@@ -433,11 +433,7 @@ class Snake(Problem):
 
 
                 succ[move] = (tuple(new_snake),tuple(new_green_apples),red_apples,new_direction)
-
-
-
-
-
+                
 
         return succ
 
