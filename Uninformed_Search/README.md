@@ -36,7 +36,7 @@
 
 A `10×10` grid contains a robot, two machines **M1** and **M2**, and parts needed to repair each machine. The robot must collect all required parts and repair both machines — navigating around wall-blocked tiles — using the **minimum number of actions**.
 
-<img width="540" height="527" alt="repair_robot" src="https://github.com/user-attachments/assets/20524295-0880-4bdf-bbe3-96f80bd4689a" />
+<img width="340" height="327" alt="repair_robot" src="https://github.com/user-attachments/assets/20524295-0880-4bdf-bbe3-96f80bd4689a" />
 
 
 **Rules & Constraints**
@@ -81,7 +81,7 @@ x21,y21         ← Part positions for M2
 
 On a `10×10` board, a snake must eat all **green apples** while avoiding **red (poisonous) apples**, using the **minimum number of moves**.
 
-<img width="883" height="408" alt="snake" src="https://github.com/user-attachments/assets/1eedaf93-9ad8-4399-a385-ee285bffbb2b" />
+<img width="618" height="286" alt="snake" src="https://github.com/user-attachments/assets/1eedaf93-9ad8-4399-a385-ee285bffbb2b" />
 
 
 **Initial State**
@@ -120,9 +120,9 @@ On a `10×10` board, a snake must eat all **green apples** while avoiding **red 
 
 On a `10×10` board with obstacles, a character must eat **all dots** on the board using the **minimum number of moves**.
 
-<img width="640" height="637" alt="pacman1" src="https://github.com/user-attachments/assets/61d62fa9-958b-44f1-a0a6-99ae43fa3045" />
+<img width="440" height="437" alt="pacman1" src="https://github.com/user-attachments/assets/61d62fa9-958b-44f1-a0a6-99ae43fa3045" />
 
-<img width="632" height="347" alt="pacman2" src="https://github.com/user-attachments/assets/7da66e0c-e800-4dbf-98d8-b657b14852f5" />
+<img width="410" height="225" alt="pacman2" src="https://github.com/user-attachments/assets/7da66e0c-e800-4dbf-98d8-b657b14852f5" />
 
 
 **Actions**
@@ -166,7 +166,7 @@ x1 y1           ← Dot positions (one per line)
 
 Three atoms — **H1**, **O**, and **H2** — are placed on a `7×9` board with grey obstacle tiles. The player must push the atoms into the shape of a **water molecule (H₂O)** using the **fewest moves**.
 
-<img width="1002" height="596" alt="molecule" src="https://github.com/user-attachments/assets/57711523-d3d7-4605-98b0-22f5df80e316" />
+<img width="501" height="298" alt="molecule" src="https://github.com/user-attachments/assets/57711523-d3d7-4605-98b0-22f5df80e316" />
 
 
 **Movement Rules**
@@ -233,7 +233,7 @@ MOVE TOP BLOCK FROM PILLAR i TO PILLAR j
 
 A **knight**, a **bishop**, and **three stars** are placed on an `8×8` chessboard. Both figures must work together to **collect all three stars** using the **minimum number of total moves**.
 
-<img width="417" height="412" alt="stars1" src="https://github.com/user-attachments/assets/e7a21e23-dfbb-4fd2-81d0-dbfc2bd183d9" />
+<img width="317" height="312" alt="stars1" src="https://github.com/user-attachments/assets/e7a21e23-dfbb-4fd2-81d0-dbfc2bd183d9" />
 
 
 **Movement Rules**
@@ -286,7 +286,7 @@ A **knight**, a **bishop**, and **three stars** are placed on an `8×8` chessboa
 
 A little man must reach his **home** on a board, while two **moving obstacles** patrol the board vertically. If the man and an obstacle occupy the same tile, the man is destroyed.
 
-<img width="952" height="352" alt="explorer" src="https://github.com/user-attachments/assets/657ad74f-82a5-4a9a-9b3e-98643b2eed34" />
+<img width="666" height="246" alt="explorer" src="https://github.com/user-attachments/assets/657ad74f-82a5-4a9a-9b3e-98643b2eed34" />
 
 
 **Movement Rules**
@@ -397,7 +397,7 @@ x y             ← Obstacle position
 
 **Output:** A single `print()` call returning the **minimum sequence of moves** (minimum balls clicked) to reach the goal state.
 
-<img width="865" height="405" alt="Balls_TestCases" src="https://github.com/user-attachments/assets/b905a817-671a-4dc7-be9a-644a7ccd3fdf" />
+<img width="432" height="203" alt="Balls_TestCases" src="https://github.com/user-attachments/assets/b905a817-671a-4dc7-be9a-644a7ccd3fdf" />
 
 ---
 
@@ -407,7 +407,7 @@ x y             ← Obstacle position
 
 On a `5×5` board, **5 gray squares** are placed at random positions. Each square has an index that determines its **target position on the left diagonal** of the board. The goal is to move all squares to their correct diagonal positions using the **minimum number of moves**.
 
-<img width="1366" height="709" alt="squares_combined" src="https://github.com/user-attachments/assets/22a7c910-f9fb-4516-a857-9711f4cb7dbd" />
+<img width="956" height="496" alt="squares_combined" src="https://github.com/user-attachments/assets/22a7c910-f9fb-4516-a857-9711f4cb7dbd" />
 
 
 **Movement Rules**
@@ -443,7 +443,7 @@ state = ((2, 4), (3, 1), (4, 1), (1, 2), (0, 0))
 
 On an `8×6` board, a man must **push a ball into the goal** (marked in gray) while avoiding **static opponents** (marked in blue). The man pushes the ball by moving into the ball's tile in a given direction.
 
-<img width="802" height="602" alt="footballer" src="https://github.com/user-attachments/assets/869b195b-d061-44da-901e-6323eab7f7a4" />
+<img width="402" height="302" alt="footballer" src="https://github.com/user-attachments/assets/869b195b-d061-44da-901e-6323eab7f7a4" />
 
 
 **Movement Rules**
@@ -478,7 +478,7 @@ On an `8×6` board, a man must **push a ball into the goal** (marked in gray) wh
 
 On a `5×5` board, a person must **push two boxes** into the **bottom-right corner** of the board (marked in red). The person can push a box by moving into its tile — but boxes can only be **pushed, not pulled**. Only **one box may occupy a single position** at a time.
 
-<img width="497" height="471" alt="two_boxes" src="https://github.com/user-attachments/assets/bbaa0564-7530-4bbd-a055-063ce43679e3" />
+<img width="397" height="376" alt="two_boxes" src="https://github.com/user-attachments/assets/bbaa0564-7530-4bbd-a055-063ce43679e3" />
 
 
 **Movement Rules**
