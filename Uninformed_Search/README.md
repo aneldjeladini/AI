@@ -261,11 +261,11 @@ MOVE TOP BLOCK FROM PILLAR i TO PILLAR j
 | ```
 3,2,1;;
 ;;3,2,1
-````| ```
+```| ```
 Number of action 7
 ['MOVE TOP BLOCK FROM PILLAR 1 TO PILLAR 3', 'MOVE TOP BLOCK FROM PILLAR 1 TO PILLAR 2', 'MOVE TOP BLOCK FROM PILLAR 3 TO PILLAR 2', 'MOVE TOP BLOCK FROM PILLAR 1 TO PILLAR 3', 'MOVE TOP BLOCK FROM PILLAR 2 TO PILLAR 1', 'MOVE TOP BLOCK FROM PILLAR 2 TO PILLAR 3', 'MOVE TOP BLOCK FROM PILLAR 1 TO PILLAR 3']
 ``` |
-```
+
 
 ---
 
@@ -275,7 +275,7 @@ Number of action 7
 
 A **knight**, a **bishop**, and **three stars** are placed on an `8×8` chessboard. Both figures must work together to **collect all three stars** using the **minimum number of total moves**.
 
-<img width="417" height="412" alt="stars1" src="https://github.com/user-attachments/assets/f3e27c1e-7774-47a1-92a2-a68a0cc19b0b" />
+<img width="317" height="312" alt="stars1" src="https://github.com/user-attachments/assets/f3e27c1e-7774-47a1-92a2-a68a0cc19b0b" />
 
 **Movement Rules**
 
@@ -327,7 +327,7 @@ A **knight**, a **bishop**, and **three stars** are placed on an `8×8` chessboa
 
 A little man must reach his **home** on a board, while two **moving obstacles** patrol the board vertically. If the man and an obstacle occupy the same tile, the man is destroyed.
 
-<img width="952" height="352" alt="explorer" src="https://github.com/user-attachments/assets/16b29a72-e777-42c9-8832-047afe5a3619" />
+<img width="752" height="152" alt="explorer" src="https://github.com/user-attachments/assets/16b29a72-e777-42c9-8832-047afe5a3619" />
 
 
 **Movement Rules**
@@ -399,11 +399,11 @@ L       ← Length of the strip
 
 On an `N×N` board (where `N > 3` is an odd number), indistinguishable balls are placed on usable cells. By jumping one ball over an adjacent ball in one of **six directions**, the jumped-over ball is **removed**. The goal is to reduce the board to **exactly one ball**, placed in the **central cell of the first row**.
 
-<img width="532" height="437" alt="balls1" src="https://github.com/user-attachments/assets/a964d1ad-a5bd-4b73-bf0e-b3239baf2178" />
+<img width="332" height="237" alt="balls1" src="https://github.com/user-attachments/assets/a964d1ad-a5bd-4b73-bf0e-b3239baf2178" />
 
-<img width="532" height="450" alt="balls2" src="https://github.com/user-attachments/assets/69b9e709-e6df-4219-8024-e0261acb08b5" />
+<img width="332" height="250" alt="balls2" src="https://github.com/user-attachments/assets/69b9e709-e6df-4219-8024-e0261acb08b5" />
 
-<img width="533" height="442" alt="balls3" src="https://github.com/user-attachments/assets/f4ab4aff-7441-4357-90e4-3774640446f5" />
+<img width="333" height="242" alt="balls3" src="https://github.com/user-attachments/assets/f4ab4aff-7441-4357-90e4-3774640446f5" />
 
 
 **Movement Rules**
@@ -442,7 +442,7 @@ x y             ← Obstacle position
 
 **Output:** A single `print()` call returning the **minimum sequence of moves** (minimum balls clicked) to reach the goal state.
 
-<img width="865" height="405" alt="Balls_TestCases" src="https://github.com/user-attachments/assets/399438fb-a2a1-4728-83d1-a32ccac30c39" />
+<img width="565" height="105" alt="Balls_TestCases" src="https://github.com/user-attachments/assets/399438fb-a2a1-4728-83d1-a32ccac30c39" />
 
 
 ---
@@ -453,9 +453,9 @@ x y             ← Obstacle position
 
 On a `5×5` board, **5 gray squares** are placed at random positions. Each square has an index that determines its **target position on the left diagonal** of the board. The goal is to move all squares to their correct diagonal positions using the **minimum number of moves**.
 
-<img width="476" height="457" alt="squares1" src="https://github.com/user-attachments/assets/2d5dfd47-8b87-45c1-ba8b-6371c5afa98a" />
+<img width="376" height="357" alt="squares1" src="https://github.com/user-attachments/assets/2d5dfd47-8b87-45c1-ba8b-6371c5afa98a" />
 
-<img width="472" height="465" alt="squares2" src="https://github.com/user-attachments/assets/32a5ba7b-c787-45a0-b9dd-2cb9ac3394bd" />
+<img width="372" height="365" alt="squares2" src="https://github.com/user-attachments/assets/32a5ba7b-c787-45a0-b9dd-2cb9ac3394bd" />
 
 
 **Movement Rules**
@@ -491,7 +491,7 @@ state = ((2, 4), (3, 1), (4, 1), (1, 2), (0, 0))
 
 On an `8×6` board, a man must **push a ball into the goal** (marked in gray) while avoiding **static opponents** (marked in blue). The man pushes the ball by moving into the ball's tile in a given direction.
 
-<img width="802" height="602" alt="footballer" src="https://github.com/user-attachments/assets/7caf75c4-0d5a-48a6-9f31-f25206c0f445" />
+<img width="552" height="352" alt="footballer" src="https://github.com/user-attachments/assets/7caf75c4-0d5a-48a6-9f31-f25206c0f445" />
 
 
 **Movement Rules**
@@ -524,7 +524,7 @@ On an `8×6` board, a man must **push a ball into the goal** (marked in gray) wh
 0,1
 1,2
 ````| `['Move man up', 'Move man up', 'Push ball down-right', 'Move man down', 'Push ball right', 'Push ball right', 'Push ball right', 'Move man down', 'Push ball up-right', 'Push ball up-right']` |
-````
+
 
 | Input | Output |
 |---|---|
