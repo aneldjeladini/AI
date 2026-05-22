@@ -2,33 +2,6 @@
 
 > A collection of classic AI problems solved using **uninformed (blind) search** algorithms — BFS, DFS, IDS, and more — implemented in Python.
 
----
-
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Tasks](#tasks)
-  - [1. Repair Robot](#1-repair-robot)
-  - [2. Snake](#2-snake)
-  - [3. Pacman](#3-pacman)
-  - [4. Molecule](#4-molecule)
-  - [5. Tower of Hanoi](#5-tower-of-hanoi)
-  - [6. Stars](#6-stars)
-  - [7. Explorer](#7-explorer)
-  - [8. Strip](#8-strip)
-  - [9. Balls](#9-balls)
-  - [10. Squares](#10-squares)
-  - [11. Footballer](#11-footballer)
-  - [12. Two Boxes](#12-two-boxes)
-- [Getting Started](#getting-started)
-- [Project Structure](#project-structure)
-
----
-
-
-## Tasks
-
----
 
 ### 1. Repair Robot
 
@@ -407,7 +380,7 @@ x y             ← Obstacle position
 
 On a `5×5` board, **5 gray squares** are placed at random positions. Each square has an index that determines its **target position on the left diagonal** of the board. The goal is to move all squares to their correct diagonal positions using the **minimum number of moves**.
 
-<img width="956" height="496" alt="squares_combined" src="https://github.com/user-attachments/assets/22a7c910-f9fb-4516-a857-9711f4cb7dbd" />
+<img width="717" height="372" alt="squares_combined" src="https://github.com/user-attachments/assets/22a7c910-f9fb-4516-a857-9711f4cb7dbd" />
 
 
 **Movement Rules**
