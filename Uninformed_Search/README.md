@@ -25,18 +25,6 @@
 
 ---
 
-## Overview
-
-This repository contains implementations of **10 AI search problems**, each solved using uninformed (blind) search strategies. The goal is to model real-world and puzzle-based problems as state-space search and find optimal or near-optimal solutions without domain-specific heuristics.
-
-**Search algorithms used:**
-- Breadth-First Search (BFS)
-- Depth-First Search (DFS)
-- Iterative Deepening Search (IDS)
-- Uniform Cost Search (UCS)
-
----
-
 ## Tasks
 
 ---
