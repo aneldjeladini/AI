@@ -186,7 +186,7 @@ east
 8,2
 8,3
 ``` | `['Move forward', 'Move forward', 'Move forward', 'Move forward', 'Move backward', 'Move forward', 'Turn right', 'Move forward', 'Move forward', 'Move forward', 'Move forward', 'Move forward', 'Move backward', 'Move forward', 'Turn left', 'Move forward', 'Move forward', 'Move forward', 'Turn left', 'Move backward', 'Move forward', 'Turn left', 'Move forward', 'Turn right']` |
-```
+
 
 ---
 
@@ -532,7 +532,7 @@ On an `8×6` board, a man must **push a ball into the goal** (marked in gray) wh
 0,1
 0,2
 ``` | `No Solution!` |
-```
+
 
 ---
 
@@ -587,9 +587,7 @@ state = ((0, 0), (2, 2), (3, 3))  # (person, box1, box2)
 2,2
 3,3
 ``` | `['Move man up', 'Move man up', 'Move man right', 'Push box 1 right', 'Push box 1 right', 'Push box 2 up', 'Move man down', 'Move man down', 'Move man right', 'Push box 1 up', 'Push box 1 up', 'Move man left', 'Move man left', 'Move man up', 'Push box 2 right']` |
-```
 
-This one matches the **Two Boxes** task. That's now examples ready for Snake, Pacman, Tower of Hanoi, Footballer (×2), and Two Boxes — want me to update the README with all of them inserted into their respective sections?
 
 ---
 
