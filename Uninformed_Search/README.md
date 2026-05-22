@@ -9,7 +9,7 @@
 
 A `10×10` grid contains a robot, two machines **M1** and **M2**, and parts needed to repair each machine. The robot must collect all required parts and repair both machines — navigating around wall-blocked tiles — using the **minimum number of actions**.
 
-<img width="340" height="327" alt="repair_robot" src="https://github.com/user-attachments/assets/20524295-0880-4bdf-bbe3-96f80bd4689a" />
+<img width="400" height="380" alt="repair_robot" src="https://github.com/user-attachments/assets/20524295-0880-4bdf-bbe3-96f80bd4689a" />
 
 
 **Rules & Constraints**
