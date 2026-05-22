@@ -196,7 +196,6 @@ east
 
 Three atoms — **H1**, **O**, and **H2** — are placed on a `7×9` board with grey obstacle tiles. The player must push the atoms into the shape of a **water molecule (H₂O)** using the **fewest moves**.
 
-<img width="491" height="268" alt="hanoi" src="https://github.com/user-attachments/assets/4cee404a-2124-467c-9a55-9275e8870585" />
 <img width="1002" height="596" alt="molecule" src="https://github.com/user-attachments/assets/a329b53c-cee7-416e-bf2b-e2bea9091d8e" />
 
 
