@@ -54,7 +54,7 @@ x21,y21         ← Part positions for M2
 
 On a `10×10` board, a snake must eat all **green apples** while avoiding **red (poisonous) apples**, using the **minimum number of moves**.
 
-<img width="618" height="286" alt="snake" src="https://github.com/user-attachments/assets/1eedaf93-9ad8-4399-a385-ee285bffbb2b" />
+<img width="710" height="328" alt="snake" src="https://github.com/user-attachments/assets/1eedaf93-9ad8-4399-a385-ee285bffbb2b" />
 
 
 **Initial State**
