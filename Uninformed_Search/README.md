@@ -526,8 +526,6 @@ On an `8×6` board, a man must **push a ball into the goal** (marked in gray) wh
 ````| `['Move man up', 'Move man up', 'Push ball down-right', 'Move man down', 'Push ball right', 'Push ball right', 'Push ball right', 'Move man down', 'Push ball up-right', 'Push ball up-right']` |
 ````
 
-**Case 2:**
-````markdown
 | Input | Output |
 |---|---|
 | ```
