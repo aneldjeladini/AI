@@ -25,6 +25,18 @@
 
 ---
 
+## Overview
+
+This repository contains implementations of **10 AI search problems**, each solved using uninformed (blind) search strategies. The goal is to model real-world and puzzle-based problems as state-space search and find optimal or near-optimal solutions without domain-specific heuristics.
+
+**Search algorithms used:**
+- Breadth-First Search (BFS)
+- Depth-First Search (DFS)
+- Iterative Deepening Search (IDS)
+- Uniform Cost Search (UCS)
+
+---
+
 ## Tasks
 
 ---
@@ -35,8 +47,7 @@
 
 A `10×10` grid contains a robot, two machines **M1** and **M2**, and parts needed to repair each machine. The robot must collect all required parts and repair both machines — navigating around wall-blocked tiles — using the **minimum number of actions**.
 
-<img width="440" height="427" alt="repair_robot" src="https://github.com/user-attachments/assets/58fba880-b6ca-4116-953e-603200a97f16" />
-
+> 📷 *Example initial state image will be inserted here.*
 
 **Rules & Constraints**
 
@@ -69,8 +80,6 @@ x21,y21         ← Part positions for M2
 
 **Goal:** Find the **shortest sequence of actions** to repair both machines.
 
-<img width="1383" height="336" alt="repairRobotTestcases" src="https://github.com/user-attachments/assets/b0500d56-a9c2-42cd-b042-cc29fed15d82" />
-
 ---
 
 ### 2. Snake
@@ -79,8 +88,7 @@ x21,y21         ← Part positions for M2
 
 On a `10×10` board, a snake must eat all **green apples** while avoiding **red (poisonous) apples**, using the **minimum number of moves**.
 
-<img width="883" height="408" alt="snake" src="https://github.com/user-attachments/assets/033182c1-202f-4e35-8ad7-7a955dfe7238" />
-
+> 📷 *Example board image will be inserted here.*
 
 **Initial State**
 
@@ -110,23 +118,6 @@ On a `10×10` board, a snake must eat all **green apples** while avoiding **red 
 
 **Output:** A single `print()` call returning the **minimum sequence of moves** to eat all green apples.
 
-| Input | Output |
-|---|---|
-| ```
-5
-6,9
-2,7
-9,5
-2,3
-4,3
-4
-4,6
-6,5
-3,3
-6,8
-``` | `['Turn left', 'Move forward', 'Turn right', 'Move forward', 'Move forward', 'Move forward', 'Move forward', 'Turn left', 'Move forward', 'Turn left', 'Move forward', 'Turn right', 'Move forward', 'Move forward', 'Move forward', 'Move forward', 'Turn left', 'Move forward', 'Move forward', 'Move forward', 'Move forward', 'Turn left', 'Move forward', 'Move forward']` |
-```
-
 ---
 
 ### 3. Pacman
@@ -135,10 +126,8 @@ On a `10×10` board, a snake must eat all **green apples** while avoiding **red 
 
 On a `10×10` board with obstacles, a character must eat **all dots** on the board using the **minimum number of moves**.
 
-<img width="640" height="637" alt="pacman1" src="https://github.com/user-attachments/assets/65010748-d275-43c0-8526-cc39a6a538bf" />
-
-<img width="632" height="347" alt="pacman2" src="https://github.com/user-attachments/assets/7cd2baa8-2cce-413e-8b20-f04d686d1328" />
-
+> 📷 *Example board image (Figure 1) will be inserted here.*
+> 📷 *Movement diagram (Figure 2) will be inserted here.*
 
 **Actions**
 
@@ -173,21 +162,6 @@ x1 y1           ← Dot positions (one per line)
 
 **Output:** A single `print()` call returning the **minimum sequence of moves** to eat all dots.
 
-| Input | Output |
-|---|---|
-| ```
-0
-0
-east
-5
-2,6
-4,0
-6,5
-8,2
-8,3
-``` | `['Move forward', 'Move forward', 'Move forward', 'Move forward', 'Move backward', 'Move forward', 'Turn right', 'Move forward', 'Move forward', 'Move forward', 'Move forward', 'Move forward', 'Move backward', 'Move forward', 'Turn left', 'Move forward', 'Move forward', 'Move forward', 'Turn left', 'Move backward', 'Move forward', 'Turn left', 'Move forward', 'Turn right']` |
-
-
 ---
 
 ### 4. Molecule
@@ -196,8 +170,7 @@ east
 
 Three atoms — **H1**, **O**, and **H2** — are placed on a `7×9` board with grey obstacle tiles. The player must push the atoms into the shape of a **water molecule (H₂O)** using the **fewest moves**.
 
-<img width="1002" height="596" alt="molecule" src="https://github.com/user-attachments/assets/a329b53c-cee7-416e-bf2b-e2bea9091d8e" />
-
+> 📷 *Board and target molecule image will be inserted here.*
 
 **Movement Rules**
 
@@ -229,11 +202,7 @@ Three atoms — **H1**, **O**, and **H2** — are placed on a `7×9` board with 
 
 **Problem Description**
 
-`N` circular pillars are arranged in a row. On one pillar, `M` stone blocks of different sizes are stacked as a tower (largest at the bottom). The goal is to **move the entire tower to a target pillar**, 
-preserving the original order, in the **minimum number of steps**.
-
-<img width="491" height="268" alt="hanoi" src="https://github.com/user-attachments/assets/a91cced9-dc03-4097-afa8-708da9d7a4f7" />
-
+`N` circular pillars are arranged in a row. On one pillar, `M` stone blocks of different sizes are stacked as a tower (largest at the bottom). The goal is to **move the entire tower to a target pillar**, preserving the original order, in the **minimum number of steps**.
 
 **Rules**
 
@@ -256,17 +225,6 @@ MOVE TOP BLOCK FROM PILLAR i TO PILLAR j
 ...
 ```
 
-| Input | Output |
-|---|---|
-| ```
-3,2,1;;
-;;3,2,1
-```| ```
-Number of action 7
-['MOVE TOP BLOCK FROM PILLAR 1 TO PILLAR 3', 'MOVE TOP BLOCK FROM PILLAR 1 TO PILLAR 2', 'MOVE TOP BLOCK FROM PILLAR 3 TO PILLAR 2', 'MOVE TOP BLOCK FROM PILLAR 1 TO PILLAR 3', 'MOVE TOP BLOCK FROM PILLAR 2 TO PILLAR 1', 'MOVE TOP BLOCK FROM PILLAR 2 TO PILLAR 3', 'MOVE TOP BLOCK FROM PILLAR 1 TO PILLAR 3']
-``` |
-
-
 ---
 
 ### 6. Stars
@@ -275,14 +233,13 @@ Number of action 7
 
 A **knight**, a **bishop**, and **three stars** are placed on an `8×8` chessboard. Both figures must work together to **collect all three stars** using the **minimum number of total moves**.
 
-<img width="317" height="312" alt="stars1" src="https://github.com/user-attachments/assets/f3e27c1e-7774-47a1-92a2-a68a0cc19b0b" />
+> 📷 *Example board image (Figure 1) will be inserted here.*
+> 📷 *Knight movement diagram (Figure 2) will be inserted here.*
+> 📷 *Bishop movement diagram (Figure 3) will be inserted here.*
 
 **Movement Rules**
 
 **Knight** — moves in an **L-shape** (Macedonian letter Г), with up to 8 possible landing positions:
-
-<img width="300" height="297" alt="stars2" src="https://github.com/user-attachments/assets/30192131-4168-4944-b888-5fd83b131913" />
-
 
 | Move | Name | Direction |
 |---|---|---|
@@ -296,9 +253,6 @@ A **knight**, a **bishop**, and **three stars** are placed on an `8×8` chessboa
 | `K8` | Knight move 8 | Left + Left + Up |
 
 **Bishop** — moves **one step diagonally** in one of four directions:
-
-<img width="288" height="291" alt="stars3" src="https://github.com/user-attachments/assets/714e41c8-b988-4523-8193-3b4a6b71ab1a" />
-
 
 | Move | Name | Direction |
 |---|---|---|
@@ -327,8 +281,8 @@ A **knight**, a **bishop**, and **three stars** are placed on an `8×8` chessboa
 
 A little man must reach his **home** on a board, while two **moving obstacles** patrol the board vertically. If the man and an obstacle occupy the same tile, the man is destroyed.
 
-<img width="752" height="152" alt="explorer" src="https://github.com/user-attachments/assets/16b29a72-e777-42c9-8832-047afe5a3619" />
-
+> 📷 *Example board image will be inserted here.*
+> 📷 *Movement example (Figure 2) will be inserted here.*
 
 **Movement Rules**
 
@@ -359,8 +313,8 @@ A little man must reach his **home** on a board, while two **moving obstacles** 
 
 On a strip of `L` cells, `N` numbered disks are placed in the first `N` cells in increasing order. The goal is to move all disks to the **last `N` cells** in **decreasing order**, using the **minimum number of moves**.
 
-<img width="1087" height="197" alt="strip" src="https://github.com/user-attachments/assets/d27b3ebf-f3ad-47fd-bfbb-3844a3a9fbe0" />
-
+> 📷 *Initial state (Figure 1) will be inserted here.*
+> 📷 *Goal state (Figure 2) will be inserted here.*
 
 **Movement Rules**
 
@@ -399,12 +353,9 @@ L       ← Length of the strip
 
 On an `N×N` board (where `N > 3` is an odd number), indistinguishable balls are placed on usable cells. By jumping one ball over an adjacent ball in one of **six directions**, the jumped-over ball is **removed**. The goal is to reduce the board to **exactly one ball**, placed in the **central cell of the first row**.
 
-<img width="332" height="237" alt="balls1" src="https://github.com/user-attachments/assets/a964d1ad-a5bd-4b73-bf0e-b3239baf2178" />
-
-<img width="332" height="250" alt="balls2" src="https://github.com/user-attachments/assets/69b9e709-e6df-4219-8024-e0261acb08b5" />
-
-<img width="333" height="242" alt="balls3" src="https://github.com/user-attachments/assets/f4ab4aff-7441-4357-90e4-3774640446f5" />
-
+> 📷 *Initial board state (Figure 1) will be inserted here.*
+> 📷 *Example jump move (Figure 2) will be inserted here.*
+> 📷 *Goal state (Figure 3) will be inserted here.*
 
 **Movement Rules**
 
@@ -442,9 +393,6 @@ x y             ← Obstacle position
 
 **Output:** A single `print()` call returning the **minimum sequence of moves** (minimum balls clicked) to reach the goal state.
 
-<img width="565" height="105" alt="Balls_TestCases" src="https://github.com/user-attachments/assets/399438fb-a2a1-4728-83d1-a32ccac30c39" />
-
-
 ---
 
 ### 10. Squares
@@ -453,10 +401,8 @@ x y             ← Obstacle position
 
 On a `5×5` board, **5 gray squares** are placed at random positions. Each square has an index that determines its **target position on the left diagonal** of the board. The goal is to move all squares to their correct diagonal positions using the **minimum number of moves**.
 
-<img width="376" height="357" alt="squares1" src="https://github.com/user-attachments/assets/2d5dfd47-8b87-45c1-ba8b-6371c5afa98a" />
-
-<img width="372" height="365" alt="squares2" src="https://github.com/user-attachments/assets/32a5ba7b-c787-45a0-b9dd-2cb9ac3394bd" />
-
+> 📷 *Initial board state (Figure 1) will be inserted here.*
+> 📷 *Goal state (Figure 2) will be inserted here.*
 
 **Movement Rules**
 
@@ -481,8 +427,6 @@ state = ((2, 4), (3, 1), (4, 1), (1, 2), (0, 0))
 
 > Board size is **fixed** (`5×5`). Square positions are read from standard input and change per test case. Validity checking is handled by the provided `check_valid` function.
 
-<img width="476" height="187" alt="squaresTestCases" src="https://github.com/user-attachments/assets/098b1e8a-450b-4da0-b89a-b2c59394309c" />
-
 ---
 
 ### 11. Footballer
@@ -491,8 +435,7 @@ state = ((2, 4), (3, 1), (4, 1), (1, 2), (0, 0))
 
 On an `8×6` board, a man must **push a ball into the goal** (marked in gray) while avoiding **static opponents** (marked in blue). The man pushes the ball by moving into the ball's tile in a given direction.
 
-<img width="552" height="352" alt="footballer" src="https://github.com/user-attachments/assets/7caf75c4-0d5a-48a6-9f31-f25206c0f445" />
-
+> 📷 *Example board state (Figure 1) will be inserted here.*
 
 **Movement Rules**
 
@@ -518,22 +461,6 @@ On an `8×6` board, a man must **push a ball into the goal** (marked in gray) wh
 
 **Goal:** Find the **minimum number of steps** to push the ball into the goal.
 
-| Input | Output |
-|---|---|
-| ```
-0,1
-1,2
-``` | `['Move man up', 'Move man up', 'Push ball down-right', 'Move man down', 'Push ball right', 'Push ball right', 'Push ball right', 'Move man down', 'Push ball up-right', 'Push ball up-right']` |
-
-
-| Input | Output |
-|---|---|
-| ```
-0,1
-0,2
-``` | `No Solution!` |
-
-
 ---
 
 ### 12. Two Boxes
@@ -542,8 +469,7 @@ On an `8×6` board, a man must **push a ball into the goal** (marked in gray) wh
 
 On a `5×5` board, a person must **push two boxes** into the **bottom-right corner** of the board (marked in red). The person can push a box by moving into its tile — but boxes can only be **pushed, not pulled**. Only **one box may occupy a single position** at a time.
 
-<img width="497" height="471" alt="two_boxes" src="https://github.com/user-attachments/assets/c03d3bca-9673-4ffd-8b49-8f813b950a59" />
-
+> 📷 *Example board state (Figure 1) will be inserted here.*
 
 **Movement Rules**
 
@@ -580,15 +506,6 @@ state = ((0, 0), (2, 2), (3, 3))  # (person, box1, box2)
 
 **Goal:** Find the **minimum number of steps** to push both boxes to the goal.
 
-| Input | Output |
-|---|---|
-| ```
-0,0
-2,2
-3,3
-``` | `['Move man up', 'Move man up', 'Move man right', 'Push box 1 right', 'Push box 1 right', 'Push box 2 up', 'Move man down', 'Move man down', 'Move man right', 'Push box 1 up', 'Push box 1 up', 'Move man left', 'Move man left', 'Move man up', 'Push box 2 right']` |
-
-
 ---
 
 ## Getting Started
@@ -601,9 +518,59 @@ Python 3.8+
 
 ### Running a Task
 
- - Download the provided searching_framework folder and place it on the same level as the .py file
+Each task has its own Python file. Run with:
 
- - Run the .py file and provide input interactively via standard input.
+```bash
+python task_name.py < input.txt
+```
+
+Or provide input interactively via standard input.
+
+---
+
+## Project Structure
+
+```
+uninformed-search/
+│
+├── repair_robot/
+│   └── solution.py
+│
+├── snake/
+│   └── solution.py
+│
+├── pacman/
+│   └── solution.py
+│
+├── molecule/
+│   └── solution.py
+│
+├── tower_of_hanoi/
+│   └── solution.py
+│
+├── stars/
+│   └── solution.py
+│
+├── explorer/
+│   └── solution.py
+│
+├── strip/
+│   └── solution.py
+│
+├── balls/
+│   └── solution.py
+│
+├── squares/
+│   └── solution.py
+│
+├── footballer/
+│   └── solution.py
+│
+├── two_boxes/
+│   └── solution.py
+│
+└── README.md
+```
 
 ---
 
