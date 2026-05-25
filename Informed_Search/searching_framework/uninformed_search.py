@@ -1,6 +1,6 @@
 import sys
 
-from .utils import Node, FIFOQueue, Stack, PriorityQueue, Problem
+from .utils import *
 
 """
 Неинформирано пребарување во рамки на дрво.
@@ -146,7 +146,7 @@ def iterative_deepening_search(problem):
     """
     for depth in range(sys.maxsize):
         result = depth_limited_search(problem, depth)
-        if result is not 'cutoff':
+        if result != 'cutoff':
             return result
 
 
