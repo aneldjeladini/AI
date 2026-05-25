@@ -2,44 +2,6 @@
 
 > A collection of classic AI problems solved using **uninformed (blind) search** algorithms — BFS, DFS, IDS, and more — implemented in Python.
 
----
-
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Tasks](#tasks)
-  - [1. Repair Robot](#1-repair-robot)
-  - [2. Snake](#2-snake)
-  - [3. Pacman](#3-pacman)
-  - [4. Molecule](#4-molecule)
-  - [5. Tower of Hanoi](#5-tower-of-hanoi)
-  - [6. Stars](#6-stars)
-  - [7. Explorer](#7-explorer)
-  - [8. Strip](#8-strip)
-  - [9. Balls](#9-balls)
-  - [10. Squares](#10-squares)
-  - [11. Footballer](#11-footballer)
-  - [12. Two Boxes](#12-two-boxes)
-- [Getting Started](#getting-started)
-- [Project Structure](#project-structure)
-
----
-
-## Overview
-
-This repository contains implementations of **10 AI search problems**, each solved using uninformed (blind) search strategies. The goal is to model real-world and puzzle-based problems as state-space search and find optimal or near-optimal solutions without domain-specific heuristics.
-
-**Search algorithms used:**
-- Breadth-First Search (BFS)
-- Depth-First Search (DFS)
-- Iterative Deepening Search (IDS)
-- Uniform Cost Search (UCS)
-
----
-
-## Tasks
-
----
 
 ### 1. Repair Robot
 
@@ -47,7 +9,8 @@ This repository contains implementations of **10 AI search problems**, each solv
 
 A `10×10` grid contains a robot, two machines **M1** and **M2**, and parts needed to repair each machine. The robot must collect all required parts and repair both machines — navigating around wall-blocked tiles — using the **minimum number of actions**.
 
-> 📷 *Example initial state image will be inserted here.*
+<img width="400" height="380" alt="repair_robot" src="https://github.com/user-attachments/assets/20524295-0880-4bdf-bbe3-96f80bd4689a" />
+
 
 **Rules & Constraints**
 
@@ -80,6 +43,9 @@ x21,y21         ← Part positions for M2
 
 **Goal:** Find the **shortest sequence of actions** to repair both machines.
 
+<img width="1383" height="336" alt="repairRobotTestcases" src="https://github.com/user-attachments/assets/e2a6e57a-1ae2-4865-a846-a2fdd6cc397a" />
+
+
 ---
 
 ### 2. Snake
@@ -88,7 +54,8 @@ x21,y21         ← Part positions for M2
 
 On a `10×10` board, a snake must eat all **green apples** while avoiding **red (poisonous) apples**, using the **minimum number of moves**.
 
-> 📷 *Example board image will be inserted here.*
+<img width="710" height="328" alt="snake" src="https://github.com/user-attachments/assets/1eedaf93-9ad8-4399-a385-ee285bffbb2b" />
+
 
 **Initial State**
 
@@ -126,8 +93,10 @@ On a `10×10` board, a snake must eat all **green apples** while avoiding **red 
 
 On a `10×10` board with obstacles, a character must eat **all dots** on the board using the **minimum number of moves**.
 
-> 📷 *Example board image (Figure 1) will be inserted here.*
-> 📷 *Movement diagram (Figure 2) will be inserted here.*
+<img width="440" height="437" alt="pacman1" src="https://github.com/user-attachments/assets/61d62fa9-958b-44f1-a0a6-99ae43fa3045" />
+
+<img width="410" height="225" alt="pacman2" src="https://github.com/user-attachments/assets/7da66e0c-e800-4dbf-98d8-b657b14852f5" />
+
 
 **Actions**
 
@@ -170,7 +139,8 @@ x1 y1           ← Dot positions (one per line)
 
 Three atoms — **H1**, **O**, and **H2** — are placed on a `7×9` board with grey obstacle tiles. The player must push the atoms into the shape of a **water molecule (H₂O)** using the **fewest moves**.
 
-> 📷 *Board and target molecule image will be inserted here.*
+<img width="501" height="298" alt="molecule" src="https://github.com/user-attachments/assets/57711523-d3d7-4605-98b0-22f5df80e316" />
+
 
 **Movement Rules**
 
@@ -204,6 +174,9 @@ Three atoms — **H1**, **O**, and **H2** — are placed on a `7×9` board with 
 
 `N` circular pillars are arranged in a row. On one pillar, `M` stone blocks of different sizes are stacked as a tower (largest at the bottom). The goal is to **move the entire tower to a target pillar**, preserving the original order, in the **minimum number of steps**.
 
+<img width="491" height="268" alt="hanoi" src="https://github.com/user-attachments/assets/eb860900-ac1d-4397-8ff1-db50244ae56c" />
+
+
 **Rules**
 
 - Only the **top block** of any pillar may be moved at each step.
@@ -233,13 +206,15 @@ MOVE TOP BLOCK FROM PILLAR i TO PILLAR j
 
 A **knight**, a **bishop**, and **three stars** are placed on an `8×8` chessboard. Both figures must work together to **collect all three stars** using the **minimum number of total moves**.
 
-> 📷 *Example board image (Figure 1) will be inserted here.*
-> 📷 *Knight movement diagram (Figure 2) will be inserted here.*
-> 📷 *Bishop movement diagram (Figure 3) will be inserted here.*
+<img width="317" height="312" alt="stars1" src="https://github.com/user-attachments/assets/e7a21e23-dfbb-4fd2-81d0-dbfc2bd183d9" />
+
 
 **Movement Rules**
 
 **Knight** — moves in an **L-shape** (Macedonian letter Г), with up to 8 possible landing positions:
+
+<img width="300" height="297" alt="stars2" src="https://github.com/user-attachments/assets/4be45747-c986-420e-84fc-58b92013e60a" />
+
 
 | Move | Name | Direction |
 |---|---|---|
@@ -253,6 +228,9 @@ A **knight**, a **bishop**, and **three stars** are placed on an `8×8` chessboa
 | `K8` | Knight move 8 | Left + Left + Up |
 
 **Bishop** — moves **one step diagonally** in one of four directions:
+
+<img width="288" height="291" alt="stars3" src="https://github.com/user-attachments/assets/38962123-bdf1-42e0-8a22-288a488486f9" />
+
 
 | Move | Name | Direction |
 |---|---|---|
@@ -281,8 +259,8 @@ A **knight**, a **bishop**, and **three stars** are placed on an `8×8` chessboa
 
 A little man must reach his **home** on a board, while two **moving obstacles** patrol the board vertically. If the man and an obstacle occupy the same tile, the man is destroyed.
 
-> 📷 *Example board image will be inserted here.*
-> 📷 *Movement example (Figure 2) will be inserted here.*
+<img width="666" height="246" alt="explorer" src="https://github.com/user-attachments/assets/657ad74f-82a5-4a9a-9b3e-98643b2eed34" />
+
 
 **Movement Rules**
 
@@ -313,8 +291,8 @@ A little man must reach his **home** on a board, while two **moving obstacles** 
 
 On a strip of `L` cells, `N` numbered disks are placed in the first `N` cells in increasing order. The goal is to move all disks to the **last `N` cells** in **decreasing order**, using the **minimum number of moves**.
 
-> 📷 *Initial state (Figure 1) will be inserted here.*
-> 📷 *Goal state (Figure 2) will be inserted here.*
+<img width="1087" height="197" alt="strip" src="https://github.com/user-attachments/assets/6aee3407-c64a-4e5a-af4e-a09f5657509e" />
+
 
 **Movement Rules**
 
@@ -353,9 +331,8 @@ L       ← Length of the strip
 
 On an `N×N` board (where `N > 3` is an odd number), indistinguishable balls are placed on usable cells. By jumping one ball over an adjacent ball in one of **six directions**, the jumped-over ball is **removed**. The goal is to reduce the board to **exactly one ball**, placed in the **central cell of the first row**.
 
-> 📷 *Initial board state (Figure 1) will be inserted here.*
-> 📷 *Example jump move (Figure 2) will be inserted here.*
-> 📷 *Goal state (Figure 3) will be inserted here.*
+<img width="1366" height="484" alt="balls_combined" src="https://github.com/user-attachments/assets/f8248a60-e789-4b82-a556-acf927e3cc87" />
+
 
 **Movement Rules**
 
@@ -393,6 +370,8 @@ x y             ← Obstacle position
 
 **Output:** A single `print()` call returning the **minimum sequence of moves** (minimum balls clicked) to reach the goal state.
 
+<img width="432" height="203" alt="Balls_TestCases" src="https://github.com/user-attachments/assets/b905a817-671a-4dc7-be9a-644a7ccd3fdf" />
+
 ---
 
 ### 10. Squares
@@ -401,8 +380,8 @@ x y             ← Obstacle position
 
 On a `5×5` board, **5 gray squares** are placed at random positions. Each square has an index that determines its **target position on the left diagonal** of the board. The goal is to move all squares to their correct diagonal positions using the **minimum number of moves**.
 
-> 📷 *Initial board state (Figure 1) will be inserted here.*
-> 📷 *Goal state (Figure 2) will be inserted here.*
+<img width="717" height="372" alt="squares_combined" src="https://github.com/user-attachments/assets/22a7c910-f9fb-4516-a857-9711f4cb7dbd" />
+
 
 **Movement Rules**
 
@@ -427,6 +406,8 @@ state = ((2, 4), (3, 1), (4, 1), (1, 2), (0, 0))
 
 > Board size is **fixed** (`5×5`). Square positions are read from standard input and change per test case. Validity checking is handled by the provided `check_valid` function.
 
+<img width="476" height="187" alt="squaresTestCases" src="https://github.com/user-attachments/assets/3395343a-9af5-4c30-b8ed-7286f510f3ca" />
+
 ---
 
 ### 11. Footballer
@@ -435,7 +416,8 @@ state = ((2, 4), (3, 1), (4, 1), (1, 2), (0, 0))
 
 On an `8×6` board, a man must **push a ball into the goal** (marked in gray) while avoiding **static opponents** (marked in blue). The man pushes the ball by moving into the ball's tile in a given direction.
 
-> 📷 *Example board state (Figure 1) will be inserted here.*
+<img width="402" height="302" alt="footballer" src="https://github.com/user-attachments/assets/869b195b-d061-44da-901e-6323eab7f7a4" />
+
 
 **Movement Rules**
 
@@ -469,7 +451,8 @@ On an `8×6` board, a man must **push a ball into the goal** (marked in gray) wh
 
 On a `5×5` board, a person must **push two boxes** into the **bottom-right corner** of the board (marked in red). The person can push a box by moving into its tile — but boxes can only be **pushed, not pulled**. Only **one box may occupy a single position** at a time.
 
-> 📷 *Example board state (Figure 1) will be inserted here.*
+<img width="397" height="376" alt="two_boxes" src="https://github.com/user-attachments/assets/bbaa0564-7530-4bbd-a055-063ce43679e3" />
+
 
 **Movement Rules**
 
@@ -508,70 +491,5 @@ state = ((0, 0), (2, 2), (3, 3))  # (person, box1, box2)
 
 ---
 
-## Getting Started
-
-### Prerequisites
-
-```bash
-Python 3.8+
-```
-
-### Running a Task
-
-Each task has its own Python file. Run with:
-
-```bash
-python task_name.py < input.txt
-```
-
-Or provide input interactively via standard input.
-
----
-
-## Project Structure
-
-```
-uninformed-search/
-│
-├── repair_robot/
-│   └── solution.py
-│
-├── snake/
-│   └── solution.py
-│
-├── pacman/
-│   └── solution.py
-│
-├── molecule/
-│   └── solution.py
-│
-├── tower_of_hanoi/
-│   └── solution.py
-│
-├── stars/
-│   └── solution.py
-│
-├── explorer/
-│   └── solution.py
-│
-├── strip/
-│   └── solution.py
-│
-├── balls/
-│   └── solution.py
-│
-├── squares/
-│   └── solution.py
-│
-├── footballer/
-│   └── solution.py
-│
-├── two_boxes/
-│   └── solution.py
-│
-└── README.md
-```
-
----
 
 > 📌 *All problems are solved using uninformed search. No heuristics are used — only BFS, DFS, IDS, or UCS depending on the problem requirements.*
