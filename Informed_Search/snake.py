@@ -404,8 +404,10 @@ def astar_search(problem, h=None):
     :type h: function
     :return: Node or None
     """
+    # h = memoize(h or problem.h, 'h')
+    # return best_first_graph_search(problem, lambda n: n.path_cost + h(n))
     h = memoize(h or problem.h, 'h')
-    return best_first_graph_search(problem, lambda n: n.path_cost + h(n))
+    return best_first_graph_search(problem, lambda n: (n.path_cost + h(n), h(n)))
 
 
 def recursive_best_first_search(problem, h=None):
